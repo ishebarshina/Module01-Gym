@@ -358,7 +358,7 @@ input[type="checkbox"]+label::before {
 }
 /* --- about__banner --- */
 .about {
-    margin-top: 161px;
+    margin: 161px 0 171px;
 }
 .about__banner {
     display: grid;
@@ -382,8 +382,27 @@ input[type="checkbox"]+label::before {
     padding-left: 52px;
     padding-right: 52px;
 }
-
-
+/* --- about columns --- */
+.about__add {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: 297px 350px 288px 205px; /* fix it */
+}
+.about__item p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.6;
+    margin: 20px 0 0;
+}
+.about__h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2B3541;
+    margin: 0;
+}
 
 
 
