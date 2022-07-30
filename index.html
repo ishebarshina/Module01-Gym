@@ -53,7 +53,7 @@
     </div>
     <div class="events">
         <div class="container">
-            <h2 class="events__h2">Ближайшие события</h2>
+            <h2 class="h2">Ближайшие события</h2>
             <div class="events__grid">
                 <div class="events__item">
                     <!--<div class="event__cover">
@@ -88,7 +88,7 @@
     <div class="schedule">
         <div class="container">
             <div class="schedule__header">
-                <h2 class="events__h2">Расписание<br>тренировок</h2>
+                <h2 class="h2">Расписание<br>тренировок</h2>
                 <div class="schedule__date">22 - 28 июня</div>
             </div>
             <div class="schedule__grid">
@@ -124,6 +124,24 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="subscription">
+        <div class="h2__subscription">
+            <div class="subscription__circle"></div>
+            <h2 class="h2 ">Подпишитесь на рассылку</h2>
+        </div>        
+        <form action="">
+            <input type="email" class="form-control" id="InputEmailForm" aria-describedby="emailHelp" placeholder="Ваш e-mail">
+            <a href="#" class="subscribe__button">подписаться</a>
+            <div class="schedule__checkbox">
+                <input type="checkbox" id="person_data" name="person_data"
+                       checked>
+                <label for="person_data">
+                    <span>Согласен с обработкой&nbsp</span><a href="#">персональных данных</a>
+                </label>
+            </div>
+        </form>
+        
     </div>
 </body>
 </html>

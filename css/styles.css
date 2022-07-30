@@ -125,7 +125,7 @@ nav li:first-child{
     right: 204px;
 }
 /* --- events --- */
-.events__h2 {
+.h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
@@ -151,8 +151,10 @@ nav li:first-child{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
-    object-position: 80% center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 80% center;
+       object-position: 80% center;
     width: 100%;
     height: 600px;
 }
@@ -222,7 +224,6 @@ nav li:first-child{
     font-size: 18px;
     line-height: 150%;
     color: #010101;
-    opacity: 0.7;
     padding: 17px 32px;
     position: absolute;
     right: 0;
@@ -244,7 +245,6 @@ nav li:first-child{
     grid-row: 2 / 4;
     grid-column: 1 / 2;
     background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
-    opacity: 0.7;
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 .schedule__item:nth-child(5) {
@@ -268,10 +268,93 @@ nav li:first-child{
     position: absolute;
     bottom: 83px;
 }
-
-
-
-
+/* --- subscription --- */
+.subscription {
+    margin: 160px 0 0;
+    padding: 79px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F3F3F3;
+}
+.h2__subscription {
+    position: relative;
+}
+input {
+    display: inline-block;
+}
+form {
+    margin: 40px 0 0 10px;
+}
+input[type="email"] {
+    width: 372px;
+    height: 65px;
+    padding: 0 20px;
+    border: none;
+    background-color: #FFFFFF;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+input[type="email"]::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.3;
+}
+.subscribe__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2B3541;
+    padding: 25px 40px;
+    background: #FBF138;
+}
+label[for="person_data"],
+label[for="person_data"] a {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #2B3541;
+}
+label[for="person_data"] a {
+    text-decoration: underline;
+}
+.schedule__checkbox {
+    margin-top: 13px;
+}
+input[type="checkbox"] {
+    opacity: 0;
+    display: none;
+}
+input[type="checkbox"]+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-image: url(../img/icons/check_box.svg);
+    margin-right: 5px;
+}
+.subscription__circle {
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    left: -36px;
+    top: -16px;
+}
 
 
 
