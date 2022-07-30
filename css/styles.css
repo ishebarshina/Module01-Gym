@@ -53,9 +53,9 @@ nav li:first-child{
     flex: 0 0 92px;
     margin-top: -5px;
 }
-/* --- banner --- */
+/* --- banner text --- */
 .banner__content {
-    padding-top: 219px;
+    padding: 219px 0 237px;
     width: 57%;
 }
 .banner__header {
@@ -83,14 +83,50 @@ nav li:first-child{
 .banner__subheader span:first-child {
     padding-right: 10px;
 }
-.banner__text {
+.banner__bottom {
     padding-left: 93px;
-    width: 50%;
+    width: 50%
+}
+.banner__text {
+    width: 100%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #2B3541;
-    margin: 0;    
+    margin: 0 0 37px;    
 }
+/* --- banner button ---*/
+
+.banner__button {
+    background: #FBF138;
+    border: none;
+    padding: 20px 29px;
+}
+.banner__button a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2B3541;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
