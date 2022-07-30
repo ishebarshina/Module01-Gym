@@ -295,6 +295,34 @@ input[type="email"] {
     margin-right: 20px;
     box-sizing: border-box;
 }
+input[type="email"]::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.3;
+}
+input[type="email"]::-moz-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.3;
+}
+input[type="email"]:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.3;
+}
+input[type="email"]::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.3;
+}
 input[type="email"]::placeholder {
     font-weight: 400;
     font-size: 18px;
@@ -334,7 +362,10 @@ input[type="checkbox"] {
 input[type="checkbox"]+label {
     display: inline-flex;
     align-items: center;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 input[type="checkbox"]+label::before {
     content: '';
@@ -457,12 +488,12 @@ input[type="checkbox"]+label::before {
     border-radius: 50%;
     background: #FBF138;
 }
-.social_media img[alt*="IN"] {
+.contacts img[alt*="IN"] {
     margin-left: 65px;
     width: 25px;
     height: 25px;
 }
-.social_media img[alt*="FB"] {
+.contacts img[alt*="FB"] {
     margin-left: 32px;
     width: 25px;
     height: 25px;
