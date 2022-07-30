@@ -1,4 +1,8 @@
 /* --- general styles --- */
+* {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
 .body {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ a {
     text-decoration: none;
 }
 .container {
-    padding: 0 387px; /* 387 */
+    padding: 0 387px;
     margin: 0 auto;
 }
 /* --- header --- */
@@ -39,8 +43,6 @@ nav li:first-child{
     justify-content: space-between;
 }
 .header__nav a {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -60,8 +62,6 @@ nav li:first-child{
     position: relative;
 }
 .banner__header {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -73,8 +73,6 @@ nav li:first-child{
     text-align: justify;
 }
 .banner__subheader {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
@@ -90,8 +88,6 @@ nav li:first-child{
 }
 .banner__text {
     width: 100%;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -100,7 +96,7 @@ nav li:first-child{
 }
 /* --- banner button ---*/
 .banner {
-    margin: 0 0 150px;
+    margin: 0 0 145px;
     position: relative;
 }
 .banner__button {
@@ -109,8 +105,6 @@ nav li:first-child{
     padding: 20px 29px;
 }
 .banner__button a {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -130,8 +124,68 @@ nav li:first-child{
     top: -10px;
     right: 204px;
 }
-
-
+/* --- events --- */
+.events__h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #2B3541;
+    margin: 0;
+    padding: 0;
+}
+.events__grid {
+    padding-top: 41px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.events__item {
+    height: 600px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 0 0 31px;
+}
+.events__item img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 600px;
+    opacity: 1;
+}
+.event__date {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    opacity: 0.9;
+}
+.event__name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #2B3541;
+    opacity: 0.99;
+    margin: 20px 0 0;
+}
+.event__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #FBF138;
+    border: none;
+    padding: 13px 21px;
+}
+.event__button a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #2B3541;
+}
 
 
 
