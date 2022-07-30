@@ -57,6 +57,7 @@ nav li:first-child{
 .banner__content {
     padding: 219px 0 237px;
     width: 57%;
+    position: relative;
 }
 .banner__header {
     font-family: 'Montserrat';
@@ -98,7 +99,9 @@ nav li:first-child{
     margin: 0 0 37px;    
 }
 /* --- banner button ---*/
-
+.banner {
+    margin: 0 0 150px;
+}
 .banner__button {
     background: #FBF138;
     border: none;
@@ -115,7 +118,17 @@ nav li:first-child{
     text-transform: uppercase;
     color: #2B3541;
 }
-
+/* --- banner absolute --- */
+.banner__arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner__screen {
+    position: absolute;
+    top: -10px;
+    right: -671px;
+}
 
 
 
