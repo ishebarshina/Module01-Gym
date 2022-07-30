@@ -101,6 +101,7 @@ nav li:first-child{
 /* --- banner button ---*/
 .banner {
     margin: 0 0 150px;
+    position: relative;
 }
 .banner__button {
     background: #FBF138;
@@ -127,7 +128,7 @@ nav li:first-child{
 .banner__screen {
     position: absolute;
     top: -10px;
-    right: -671px;
+    right: 204px;
 }
 
 
