@@ -302,7 +302,8 @@ input[type="email"]::placeholder {
     color: #2B3541;
     opacity: 0.3;
 }
-.subscribe__button {
+.subscribe__button,
+.btn {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -354,6 +355,32 @@ input[type="checkbox"]+label::before {
     position: absolute;
     left: -36px;
     top: -16px;
+}
+/* --- about__banner --- */
+.about {
+    margin-top: 161px;
+}
+.about__banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about__banner-img {
+    display: block;
+    margin-left: -11px;
+}
+.about__banner-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #2B3541;
+    margin-bottom: 56px;
+}
+.about__banner-text {
+    width: 85%;
+}
+.about__btn {
+    padding-left: 52px;
+    padding-right: 52px;
 }
 
 
