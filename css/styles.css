@@ -21,7 +21,7 @@ a {
 }
 /* --- header --- */
 .header__content {
-    padding: 50px 0 27px;
+    padding: 45px 0 27px;
 }
 .header__content-inner {
     display: flex;
@@ -32,15 +32,14 @@ a {
 nav li {
     display: inline-block;
 }
-nav li:first-child{
-    margin-right: 40px;
-}
 .header__nav {
-    flex-basis: 57.6%;
-}
+    flex-basis: 41%;
+    margin-left: -26%;
+  }
 .header__nav ul {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .header__nav a {
     font-weight: 400;
@@ -48,16 +47,59 @@ nav li:first-child{
     line-height: 27px;
     color: #2B3541;
 }
-.social_media img:first-child {
-    margin-right: 23px;
+.header__nav a::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    display: block;
+    transition: 0.5s;
 }
+.header__nav a:hover::after {
+    background-color: #2B3541;
+    transition: 0.5s;
+}
+/*.social_media img:first-child {
+    margin-right: 23px;
+}*/
 .social_media {
     flex: 0 0 92px;
-    margin-top: -5px;
+    display: flex;
+    justify-content: space-between;
 }
+.social_media li:first-child a {
+    display: inline-block;
+    background-image: url(../img/icons/IN.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.social_media li:first-child a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.social_media li:last-child a {
+    display: inline-block;
+    background-image: url(../img/icons/FB.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.social_media li:last-child a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
 /* --- banner text --- */
 .banner__content {
-    padding: 219px 0 237px;
+    padding: 224px 0 237px;
     width: 57%;
     position: relative;
 }
@@ -77,7 +119,7 @@ nav li:first-child{
     font-size: 40px;
     line-height: 50px;
     color: #2B3541;
-    margin: 40px 0 21px;
+    margin: 43px 0 21px;
 }
 .banner__subheader span:first-child {
     padding-right: 10px;
@@ -121,8 +163,21 @@ nav li:first-child{
 }
 .banner__screen {
     position: absolute;
-    top: -10px;
-    right: 204px;
+    top: 38px;
+    left: 720px;
+    width: 983px;
+    height: 810px;
+    z-index: 10;
+}
+.banner__rectangle {
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: 0.2;
+    width: 464px;
+    height: 850px;
+    position: absolute;
+    bottom: 0;
+    left: 678px;
+    z-index: 1;
 }
 /* --- events --- */
 .h2 {
