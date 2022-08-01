@@ -138,7 +138,7 @@ nav li {
 }
 /* --- banner button ---*/
 .banner {
-    margin: 0 0 145px;
+    margin: 0 0 160px;
     position: relative;
 }
 .banner__button {
@@ -542,6 +542,7 @@ input[type="checkbox"]+label::before {
     display: flex;
     align-items: center;
     position: relative;
+    margin-top: -8px;
 }
 .footer__circle {
     position: absolute;
