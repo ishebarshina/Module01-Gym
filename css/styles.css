@@ -380,13 +380,13 @@ input[type="checkbox"]+label::before {
     margin-right: 5px;
 }
 .subscription__circle {
-    background-color: rgba(251, 241, 56, 0.3);
+    background-color: rgba(251, 241, 56, 0.6);
     border-radius: 50%;
     width: 53px;
     height: 53px;
     position: absolute;
     left: -36px;
-    top: -16px;
+    top: -20px;
     z-index: 1;
 }
 /* --- about__banner --- */
@@ -395,8 +395,6 @@ input[type="checkbox"]+label::before {
     width: 100%;
 }
 .about__banner {
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);*/
     display: flex;
     justify-content: space-between;
 }
@@ -496,7 +494,7 @@ input[type="checkbox"]+label::before {
     height: 25px;
     left: -17px;
     top: -11px;
-    background-color: rgba(251, 241, 56, 0.3);
+    background-color: rgba(251, 241, 56, 0.6);
     border-radius: 50%;
     z-index: 1;
 }
