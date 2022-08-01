@@ -132,6 +132,8 @@ nav li:first-child{
     color: #2B3541;
     margin: 0;
     padding: 0;
+    z-index: 100;
+    position: relative;
 }
 .events__grid {
     padding-top: 41px;
@@ -378,13 +380,14 @@ input[type="checkbox"]+label::before {
     margin-right: 5px;
 }
 .subscription__circle {
-    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    background-color: rgba(251, 241, 56, 0.3);
     border-radius: 50%;
     width: 53px;
     height: 53px;
     position: absolute;
     left: -36px;
     top: -16px;
+    z-index: 1;
 }
 /* --- about__banner --- */
 .about {
@@ -470,8 +473,10 @@ input[type="checkbox"]+label::before {
     line-height: 24px;
     color: #2B3541;
     display: inline-block;
+    z-index: 10;
+    position: relative;
 }
-.social_media {
+.contacts {
     flex: 0 0 295px;
     width: 100%;
     display: flex;
@@ -484,9 +489,9 @@ input[type="checkbox"]+label::before {
     height: 25px;
     left: -17px;
     top: -11px;
-    box-shadow: 0px 13px 24px rgba(151, 241, 56, 0.3);
+    background-color: rgba(251, 241, 56, 0.3);
     border-radius: 50%;
-    background: #FBF138;
+    z-index: 1;
 }
 .contacts img[alt*="IN"] {
     margin-left: 65px;
