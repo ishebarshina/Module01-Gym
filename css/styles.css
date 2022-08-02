@@ -467,33 +467,6 @@ label[for="person_data"] a {
 label[for="person_data"] a {
     text-decoration: underline;
 }
-/*
-.schedule__checkbox {
-    margin-top: 13px;
-}
-input[type="checkbox"] {
-    opacity: 0;
-    display: none;
-}
-input[type="checkbox"]+label {
-    display: inline-flex;
-    align-items: center;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-input[type="checkbox"]+label::before {
-    content: '';
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    flex-grow: 0;
-    background-image: url(../img/icons/check_box.svg);
-    margin-right: 5px;
-}
-*/
 /* ------------------- input checkbox start -------------------------- */
 .agreement {
     margin-top: 13px;
