@@ -467,6 +467,7 @@ label[for="person_data"] a {
 label[for="person_data"] a {
     text-decoration: underline;
 }
+/*
 .schedule__checkbox {
     margin-top: 13px;
 }
@@ -492,6 +493,55 @@ input[type="checkbox"]+label::before {
     background-image: url(../img/icons/check_box.svg);
     margin-right: 5px;
 }
+*/
+/* ------------------- input checkbox start -------------------------- */
+.agreement {
+    margin-top: 13px;
+}
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #2B3541;
+}
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.checkbox:checked + label::after{
+    content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transition: all .6s ease;
+    opacity: 1;
+    left: 0px;
+    top: calc(50% - 9px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons/check_box.svg);
+    border: 1px solid #2B3541;
+    border-radius: 1px;
+}
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::before{
+    content:'';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left:0;
+    top:calc(50% - 9px);
+    background-color: transparent;
+    border-radius: 1px;
+    border: 1px solid #2B3541;
+}
+/* ------------------- input checkbox end -------------------------- */
 .subscription__circle {
     background-color: rgba(251, 241, 56, 0.6);
     border-radius: 50%;
