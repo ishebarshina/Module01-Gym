@@ -1,4 +1,4 @@
-const links = document.querySelectorAll(".banner__arrow");
+const links = document.querySelectorAll(".banner__arrow, .nav_link");
 for (const link of links) {
 link.addEventListener("click", clickHandler);
 }
