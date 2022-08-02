@@ -326,11 +326,12 @@ nav li {
     border: 1px solid #2B3541;
     padding: 20px 30px;
     position: relative;
+    transition: 0.7s;
 }
 .schedule__hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, 1) 0%, rgba(253, 249, 182, 0.45) 100%);
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2); 
-    transition: 0.5s;
+    transition: 0.7s;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -340,10 +341,12 @@ nav li {
 }
 .schedule__item:hover {
     cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.7s;
 }
 .schedule__item:hover .schedule__hover {
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 .schedule__item:nth-child(1) {
     grid-row: 1 / 2;
