@@ -244,9 +244,12 @@ nav li {
     text-align: center;
     color: #2B3541;
 }
+.events {
+    margin-bottom: 158px;
+}
 /* --- schedule --- */
 .schedule {
-    margin: 158px 0 0;
+    margin: 0;
 }
 .schedule__header {
     display: flex;
