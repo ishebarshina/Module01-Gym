@@ -541,6 +541,9 @@ input[type="checkbox"]+label::before {
     border-radius: 1px;
     border: 1px solid #2B3541;
 }
+.agree_data {
+    text-decoration: underline;
+}
 /* ------------------- input checkbox end -------------------------- */
 .subscription__circle {
     background-color: rgba(251, 241, 56, 0.6);
@@ -662,16 +665,42 @@ input[type="checkbox"]+label::before {
     border-radius: 50%;
     z-index: 1;
 }
-.contacts img[alt*="IN"] {
-    margin-left: 65px;
-    width: 25px;
-    height: 25px;
+.footer__social_media {
+    flex: 0 0 86px;
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0 0 68px;
 }
-.contacts img[alt*="FB"] {
-    margin-left: 32px;
-    width: 25px;
-    height: 25px;
+.footer__social_media li:first-child a {
+    display: inline-block;
+    background-image: url(../img/icons/IN.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
 }
+.footer__social_media li:first-child a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+.footer__social_media li:last-child a {
+    display: inline-block;
+    background-image: url(../img/icons/FB.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: scale(1);
+    opacity: 0.8;
+}
+.footer__social_media li:last-child a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+ }
 .rights {
     display: flex;
     justify-content: space-between;
