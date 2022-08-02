@@ -61,13 +61,11 @@ nav li {
     background-color: #2B3541;
     transition: 0.5s;
 }
-/*.social_media img:first-child {
-    margin-right: 23px;
-}*/
 .social_media {
     flex: 0 0 92px;
     display: flex;
     justify-content: space-between;
+    margin: -6px 0 0;
 }
 .social_media li:first-child a {
     display: inline-block;
@@ -140,7 +138,7 @@ nav li {
 }
 /* --- banner button ---*/
 .banner {
-    margin: 0 0 160px;
+    margin: 0 0 145px;
     position: relative;
 }
 .banner__button {
@@ -164,7 +162,7 @@ nav li {
 }
 .banner__screen {
     position: absolute;
-    top: 6px;
+    top: 32px;
     left: 329px;
     width: 983px;
     height: 810px;
@@ -176,7 +174,7 @@ nav li {
     width: 464px;
     height: 850px;
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     left: 678px;
     z-index: 1;
 }
