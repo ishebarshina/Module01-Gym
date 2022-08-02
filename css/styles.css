@@ -16,7 +16,8 @@ a {
     text-decoration: none;
 }
 .container {
-    padding: 0 386px 0 387px;
+    /*padding: 0 386px 0 387px;*/
+    width: 1142px;
     margin: 0 auto;
 }
 /* --- header --- */
@@ -100,7 +101,7 @@ nav li {
  }
 /* --- banner text --- */
 .banner__content {
-    padding: 224px 0 274px;
+    padding: 220px 0 274px;
     width: 57%;
     position: relative;
 }
@@ -135,7 +136,7 @@ nav li {
     font-size: 18px;
     line-height: 27px;
     color: #2B3541;
-    margin: 0 0 37px;    
+    margin: 0 0 53px;    
 }
 /* --- banner button ---*/
 .banner {
@@ -158,13 +159,13 @@ nav li {
 /* --- banner absolute --- */
 .banner__arrow {
     position: absolute;
-    bottom: 0;
+    bottom: 12px;
     left: 0;
 }
 .banner__screen {
     position: absolute;
-    top: 38px;
-    left: 720px;
+    top: 6px;
+    left: 329px;
     width: 983px;
     height: 810px;
     z-index: 10;
@@ -331,8 +332,7 @@ nav li {
 .schedule__hover {
     background: linear-gradient(180deg, rgba(251, 241, 56, 1) 0%, rgba(253, 249, 182, 0.45) 100%);
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2); 
-    transition: 2s;
-    cursor: pointer;
+    transition: 0.5s;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -340,8 +340,12 @@ nav li {
     width: 100%;
     height: 100%;
 }
+.schedule__item:hover {
+    cursor: pointer;
+}
 .schedule__item:hover .schedule__hover {
     opacity: 1;
+    transition: 0.5s;
 }
 .schedule__item:nth-child(1) {
     grid-row: 1 / 2;
