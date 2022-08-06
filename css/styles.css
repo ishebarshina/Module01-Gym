@@ -67,13 +67,15 @@ nav li {
     justify-content: space-between;
     margin: -6px 0 0;
 }
-.social_media li:first-child a {
+.social_media a {
+    width: 30px;
+    height: 30px;
     display: inline-block;
+}
+.social_media li:first-child a {
     background-image: url(../img/icons/IN.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
@@ -83,12 +85,9 @@ nav li {
     opacity: 1;
 }
 .social_media li:last-child a {
-    display: inline-block;
     background-image: url(../img/icons/FB.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
     transition: 0.3s;
     transform: scale(1);
     opacity: 0.8;
@@ -650,7 +649,7 @@ label[for="person_data"] a {
     width: 25px;
     height: 25px;
     left: -17px;
-    top: -11px;
+    top: 0px;
     background-color: rgba(251, 241, 56, 0.6);
     border-radius: 50%;
     z-index: 1;
@@ -715,3 +714,47 @@ label[for="person_data"] a {
     color: #FBF138;
     transition: 0.5s;
 }
+/*----------------modal window-----------------*/
+    .burger {
+        width: 34px;
+        height: 22px;
+        background-image: url(../img/menu-burger.svg);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .modal {
+        background-color: #FFF8DC;
+        max-width: 500px;
+        position: absolute;
+        top: -400px;
+        /* ставим по центру */
+        left: 0;
+        right: 0;
+        margin: 20px auto 0;
+        padding: 38px 0px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    .modal .header__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 19px;
+        margin: 0;
+        transition: 0.5s;
+    }
+    .burger__close {
+        width: 22px;
+        height: 22px;
+        background-image: url(../img/modal-close.svg);
+        background-color: transparent;
+        border: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/adaptive.css">
     <title>GYM</title>
 </head>
 <body>
@@ -18,6 +19,9 @@
                 <a href="#" id="top_logo">
                     <img src="img/logo.svg" alt="logo.svg" class="header-logo">
                 </a>
+                <div class="header__burger">
+                    <button class="burger" onclick="openModal()"></button>
+                </div>
                 <nav class="header__nav">
                     <ul>
                         <li><a href="#events" class="nav_link">Мероприятия</a></li>
@@ -213,6 +217,23 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <ul class="header__nav">
+            <li>
+                <a href="index.html" class="">Главная</a>
+            </li>
+            <li>
+                <a href="#" class="">Меню</a>
+            </li>
+            <li>
+                <a href="#" class="">О нас</a>
+            </li>
+            <li>
+                <a href="#" class="">Контакты</a>
+            </li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+    </div>
     <script src="/js/main.js"></script>
 </body>
 </html>
