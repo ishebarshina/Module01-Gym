@@ -210,19 +210,6 @@ nav li {
 .events__item:nth-child(3) {
     background-image: url(/img/@1x/yoga.jpg);
 }
-/* .events__item img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 80% center;
-       object-position: 80% center;
-    width: 100%;
-    height: 600px;
-    z-index: 0;
-} */
 .event__hover {
     position: absolute;
     top: 0;
