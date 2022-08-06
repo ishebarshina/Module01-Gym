@@ -201,7 +201,16 @@ nav li {
     padding: 10px 31px 0;
     overflow: hidden;
 }
-.events__item img {
+.events__item:nth-child(1) {
+    background-image: url(/img/@1x/maraphon.png);
+}
+.events__item:nth-child(2) {
+    background-image: url(/img/@1x/Vebinar\ 1.png);
+}
+.events__item:nth-child(3) {
+    background-image: url(/img/@1x/yoga.jpg);
+}
+/* .events__item img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -213,7 +222,7 @@ nav li {
     width: 100%;
     height: 600px;
     z-index: 0;
-}
+} */
 .event__hover {
     position: absolute;
     top: 0;
