@@ -155,12 +155,16 @@
         width: 50%;
     }
     .event__button {
+        position: absolute;
+        right: calc(100% - 87px);
+        padding: 6px 16px;
         font-weight: 400;
         font-size: 12px;
-        line-height: 18px;        
+        line-height: 18px;
         text-align: center;
         color: #2B3541;
     }
+
 }
 @media(max-width: 767px) {
 
