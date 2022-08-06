@@ -174,7 +174,7 @@ nav li {
     height: 850px;
     position: absolute;
     bottom: 15px;
-    left: 678px;
+    right: -487px;
     z-index: 1;
 }
 /* --- events --- */
