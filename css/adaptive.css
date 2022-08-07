@@ -227,8 +227,44 @@
     }
     /* --- subscription --- */ 
     .subscription {
-        
+        margin-top: 91px;
+        padding: 57px 79px 34px;
     }
+    .h2__subscription {
+        text-align: center;
+        width: 37%;
+    }
+    .h2__subscription .h2 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        color: #2B3541;
+    }
+    .subscription__circle {
+        width: 31px;
+        height: 31px;
+        left: 0;
+        top: -13px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0;
+    }
+    input[type="email"] {
+        order: 1;
+        width: 340px;
+        margin-right: 0;
+        padding-left: 27px;
+    }
+    .subscribe__button {
+        order: 3;
+    }
+    .agreement {
+        order: 2;
+        margin-bottom: 41px;
+    }
+
 }
 @media(max-width: 767px) {
 
