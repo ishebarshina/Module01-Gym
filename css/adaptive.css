@@ -355,6 +355,13 @@
         width: 28px;
         height: 28px;
     }
+    .footer__circle {
+        left: 8px;
+        top: -7px;
+        position: relative;
+        width: 20px;
+        height: 20px;
+    }
     .rights {
         margin-top: 32px;
     }
