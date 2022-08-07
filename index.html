@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>GYM</title>
 </head>
 <body>
@@ -219,21 +220,27 @@
         </div>
     </footer>
     <div class="modal" id="modal">
-        <ul class="header__nav">
-            <li>
-                <a href="index.html" class="">Главная</a>
-            </li>
-            <li>
-                <a href="#" class="">Меню</a>
-            </li>
-            <li>
-                <a href="#" class="">О нас</a>
-            </li>
-            <li>
-                <a href="#" class="">Контакты</a>
-            </li>
-        </ul>
-        <button class="burger-close" onclick="closeModal()"></button>
+        <div class="header__content-inner">
+            <a href="#" id="top_logo">
+                <img src="img/logo.svg" alt="logo.svg" class="header-logo">
+            </a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#events" class="nav_link">Мероприятия</a></li>
+                    <li><a href="#schedule" class="nav_link">Расписания</a></li>
+                    <li><a href="#subscription" class="nav_link">О компании</a></li>
+                </ul>
+            </nav>
+            <ul class="social_media">
+                <li>
+                   <a href="#" target="_blank"></a>
+                </li>
+                <li>
+                   <a href="#" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__close" onclick="closeModal()"></button>
     </div>
     <script src="/js/main.js"></script>
 </body>
