@@ -206,13 +206,13 @@ nav li {
     overflow: hidden;
 }
 .events__item:nth-child(1) {
-    background-image: url(/img/@1x/maraphon.png);
+    background-image: url(../img/@1x/maraphon.png);
 }
 .events__item:nth-child(2) {
-    background-image: url(/img/@1x/Vebinar\ 1.png);
+    background-image: url(../img/@1x/Vebinar\ 1.png);
 }
 .events__item:nth-child(3) {
-    background-image: url(/img/@1x/yoga.jpg);
+    background-image: url(../img/@1x/yoga.jpg);
 }
 .event__hover {
     position: absolute;
@@ -283,7 +283,7 @@ nav li {
     line-height: 27px;
     text-align: center;
     color: #2B3541;
-    z-index: 12;
+    /* z-index: 12; */
 }
 .events {
     margin-bottom: 158px;
