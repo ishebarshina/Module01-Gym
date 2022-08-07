@@ -2,6 +2,7 @@
 * {
     font-family: 'Montserrat';
     font-style: normal;
+    color: #2B3541;
 }
 .body {
     margin: 0;
@@ -545,7 +546,8 @@ label[for="person_data"] a {
 .about__banner-img {
     display: block;
     margin-left: -11px;
-    flex: 0 0 50%;
+    /* flex: 0 0 50%; */
+    width: 50%;
 }
 .about__banner-text p {
     font-weight: 400;

@@ -264,6 +264,46 @@
         order: 2;
         margin-bottom: 41px;
     }
+    /* --- about --- */
+    .about {
+        margin: 86px 0 97px;
+    }
+    .about__banner {
+        align-items: flex-start;
+    }
+    .about__banner-img {
+        margin-top: 16px;
+    
+    }
+    .about__btn {
+        padding: 24px 45px;
+    }
+    .about__banner-text p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #2B3541;
+        margin: 7px 0 53px;
+    }
+    .about__add {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        row-gap: 42px;
+    }
+    .about__h3 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .about__item {
+        width: 70%;
+    }
+    .about__item p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-top: 15px;
+    }
 
 }
 @media(max-width: 767px) {
