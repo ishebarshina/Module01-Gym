@@ -226,6 +226,9 @@ nav li {
     z-index: 10;
     transition: 0.8s;
 }
+.events__add {
+    display: none;
+}
 .event__join {
     font-weight: 700;
     font-size: 16px;
