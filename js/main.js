@@ -16,5 +16,5 @@ function openModal() {
 }
 
 function closeModal() {
-    document.getElementById("modal").style.top = "-400px";
+    document.getElementById("modal").style.top = "-700px";
 }

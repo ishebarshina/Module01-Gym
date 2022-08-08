@@ -14,8 +14,11 @@
     padding: 34px 0 0;
     z-index: 100;
 }
+.modal #top_logo {
+    margin: -7px 0 0 10px;
+}
 .modal .header__content-inner {
-    padding-bottom: 50px;
+    padding-bottom: 86px;
 }
 .modal .header__nav {
     display: block;
@@ -67,7 +70,9 @@
 }
 .modal .social_media {
     top: inherit;
-    bottom: 0;
+    left: inherit;
+    bottom: 17px;
+    right: 10px;
 }
 .modal__bottom {
     max-width: 587px;
