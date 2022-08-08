@@ -10,7 +10,7 @@
 }
 @media(max-width: 1150px) {
     .container {
-        width: 748px;
+        max-width: 748px;
         margin: 0 auto;
     }
     /* --- header --- */

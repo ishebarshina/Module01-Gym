@@ -18,7 +18,7 @@ a {
 }
 .container {
     /*padding: 0 386px 0 387px;*/
-    width: 1142px;
+    max-width: 1142px;
     margin: 0 auto;
 }
 /* --- header --- */
