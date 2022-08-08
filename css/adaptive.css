@@ -179,9 +179,8 @@
     .events__add:hover {
         cursor: pointer;
     }
-    .event__hover:hover {
-        opacity: 0;
-        z-index: 0;
+    .event__hover{
+        display: none;
     }
     /* --- schedule --- */
     .schedule__header .h2 {
