@@ -377,6 +377,7 @@
     .container {
         max-width: 500px;
         margin: 0 auto;
+        padding: 0 10px;
     }
     /* --- header --- */
     .header__content {
@@ -394,7 +395,7 @@
     }
   /* --- main --- */
     .banner {
-        margin: 0 0 80px;
+        margin: 0 0 118px;
     }
     .banner__content {
         padding: 23px 0 121px;
@@ -421,10 +422,8 @@
     }
     .banner__text {
         width: 80%;
+        margin-bottom: 42px;
     }
-    /* .banner__button {
-        padding: 22px 71px 22px 76px;
-    } */
     .banner__button {
         padding: 22px 0;
         display: block;
@@ -434,7 +433,7 @@
         position: static;
         width: 100%;
         height: 216px;
-        margin-top: 107px;
+        margin-top: 84px;
     }
     .banner__screen {
         max-width: 340px;
@@ -447,5 +446,60 @@
     .banner__arrow img{
         display: none;
     }
-
+/* --- events --- */
+    .events__grid {
+        column-gap: 10px;
+        margin-top: 11px;
+    }
+    .events__item {
+        padding: 6px 0  0 19px;
+    }
+    .event__name {
+        width: 100%;
+    }
+    .events__item:nth-child(3) .event__name {
+        width: 40%;
+    }
+    .events__item:nth-child(1) {
+        background-image: url(../img/@1x/maraphon_360.png);
+        background-repeat: no-repeat;
+    }
+    .events__item:nth-child(2) {
+        background-image: url(../img/@1x/Vebinar_360.png);
+    }
+    .events__item:nth-child(3) {
+        grid-column: 1 / 3;
+        height: 339px;
+        background-image: url(../img/@1x/yoga_360.jpg);
+    }
+    .events {
+        margin-bottom: 78px;
+    }
+/* --- schedule --- */
+    .schedule__header {
+        margin-bottom: 21px;
+    }
+    .schedule__grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .schedule__item {
+        height: 114px;
+        box-sizing: border-box;
+    }
+    .schedule__time {
+        padding-top: 19px;
+        padding-right: 20px;
+    }
+    /* ну тут надо каждый item описывать */
+    .schedule__item img { 
+        bottom: 7px;
+        left: 0px;
+        scale: 0.6;
+        position: absolute;
+    }
+    .schedule__title {
+        left: 75px;
+        bottom: 10px;
+    }
 }
