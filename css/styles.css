@@ -4,6 +4,9 @@
     font-style: normal;
     color: #2B3541;
 }
+html {
+    overflow: hidden;
+}
 .body {
     margin: 0;
     padding: 0;
