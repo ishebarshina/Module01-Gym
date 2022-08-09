@@ -5,7 +5,8 @@
     color: #2B3541;
 }
 html {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .body {
     margin: 0;
