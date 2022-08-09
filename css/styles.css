@@ -265,6 +265,8 @@ nav li {
     line-height: 27px;
     color: #2B3541;
     opacity: 0.999;
+    z-index: 100;
+    position: relative;
 }
 .event__name {
     font-weight: 700;
@@ -273,6 +275,8 @@ nav li {
     color: #2B3541;
     opacity: 0.99;
     margin: 21px 0 0;
+    z-index: 100;
+    position: relative;
 }
 .event__button {
     position: absolute;
