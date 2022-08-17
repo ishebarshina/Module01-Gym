@@ -21,8 +21,8 @@ a {
     text-decoration: none;
 }
 .container {
-    /*padding: 0 386px 0 387px;*/
-    max-width: 1142px;
+    padding: 0 15px;
+    width: 1142px;
     margin: 0 auto;
 }
 /* --- header --- */
@@ -70,10 +70,11 @@ nav li {
     transition: 0.5s;
 }
 .social_media {
-    flex: 0 0 92px;
+    /* flex: 0 0 92px; */
     display: flex;
-    justify-content: space-between;
-    margin: -6px 0 0;
+    /* justify-content: space-between;
+    margin: -6px 0 0; */
+    gap: 10px;
 }
 .social_media a {
     width: 30px;
@@ -253,11 +254,13 @@ nav li {
     top: 185px;
     left: 30px;
     transition: 0.5s;
+    border: none;
 }
 .event__join:hover {
     background: #2B3541;
     color: #FBF138;
     transition: 0.5s;
+    cursor: pointer;
 }
 .event__date {
     font-weight: 700;

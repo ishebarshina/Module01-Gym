@@ -1,17 +1,13 @@
-@media(max-width: 1500px) {
-    .banner__screen {
-        left: 270px;
-    }
-}
-@media(min-width: 1151px) {
+@media(min-width: 1171px) {
     .header__burger {
         display: none;
     }
 }
-@media(max-width: 1150px) {
+@media(max-width: 1171px) {
     .container {
-        max-width: 748px;
+        width: 748px;
         margin: 0 auto;
+        padding: 0 10px;
     }
     /* --- header --- */
     .header__nav {
