@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/adaptive.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/my-modal.css">
     <title>GYM</title>
 </head>
 <body>
@@ -66,31 +67,37 @@
             <div class="events__grid">
                 <div class="events__item">
                     <div class="event__hover">
-                        <a href="#" class="event__join">записаться</a>
+                        <button class="event__join">записаться</button>
                     </div>
                     <p class="event__date">29.06 - 4.07</p>
                     <p class="event__name">Марафон выносливости</p>
-                    <div
-                    class="event__button">марафон</div>
+                    <div class="event__button">марафон</div>
                     <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                 </div>
                 <div class="events__item">
                     <div class="event__hover">
-                        <a href="#" class="event__join">записаться</a>
+                        <button class="event__join">записаться</button>
                     </div>
                     <p class="event__date">9.07</p>
                     <p class="event__name">Как стать тренером?</p>
-                    <div  class="event__button">вебинар</div>
+                    <div class="event__button">вебинар</div>
                     <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                 </div>
                 <div class="events__item">
                     <div class="event__hover">
-                        <a href="#" class="event__join">записаться</a>
+                        <button class="event__join">записаться</button>
                     </div>
                     <p class="event__date">15.07</p>
                     <p class="event__name">Йога, как стиль жизни</p>
-                    <div  class="event__button">вебинар</div>
+                    <div class="event__button">вебинар</div>
                     <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="my_modal">
+                <div class="my_modal__content">
+                    <span class="my_modal__close">&times;</span>
+                    <p>Some text in the Modal..</p>
                 </div>
             </div>
         </div>
@@ -244,5 +251,6 @@
         <button class="modal__close" onclick="closeModal()"></button>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/my-modal.js"></script>
 </body>
 </html>
