@@ -22,7 +22,7 @@ a {
 }
 .container {
     padding: 0 15px;
-    width: 1142px;
+    max-width: 1142px;
     margin: 0 auto;
 }
 /* --- header --- */
@@ -70,10 +70,7 @@ nav li {
     transition: 0.5s;
 }
 .social_media {
-    /* flex: 0 0 92px; */
     display: flex;
-    /* justify-content: space-between;
-    margin: -6px 0 0; */
     gap: 10px;
 }
 .social_media a {
@@ -137,7 +134,7 @@ nav li {
     width: 50%
 }
 .banner__text {
-    width: 100%;
+    width: 60%;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -201,22 +198,37 @@ nav li {
     padding-top: 41px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 19px;
+    grid-template-rows: 600px; 
+    gap: 20px;
+    position: relative;
 }
 .events__item {
-    height: 600px;
-    box-sizing: border-box;
+    /*height: 600px;
+    box-sizing: border-box;*/
     position: relative;
-    padding: 10px 31px 0;
-    overflow: hidden;
+    /*padding: 10px 31px 0;
+    overflow: hidden;*/
 }
-.events__item:nth-child(1) {
+.events__table {
+    padding: 9px 30px;
+}
+.events__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.marathon {
     background-image: url(../img/@1x/maraphon.png);
 }
-.events__item:nth-child(2) {
+.trainer {
     background-image: url(../img/@1x/Vebinar\ 1.png);
 }
-.events__item:nth-child(3) {
+.yoga {
     background-image: url(../img/@1x/yoga.jpg);
 }
 .event__hover {

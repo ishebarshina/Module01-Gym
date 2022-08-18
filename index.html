@@ -65,32 +65,43 @@
             <h2 class="h2">Ближайшие события</h2>
             <div class="events__grid">
                 <div class="events__item">
-                    <div class="event__hover">
-                        <button class="event__join">записаться</button>
+                    <div class="events__cover marathon">
+                        <div class="events__table">
+                            <p class="event__date">29.06 - 4.07</p>
+                            <p class="event__name">Марафон выносливости</p>
+                        </div>
+                        <div class="event__hover">
+                            <button class="event__join">записаться</button>
+                        </div>
+                        <div class="event__button">марафон</div>
+                        <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                     </div>
-                    <p class="event__date">29.06 - 4.07</p>
-                    <p class="event__name">Марафон выносливости</p>
-                    <div
-                    class="event__button">марафон</div>
-                    <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                 </div>
                 <div class="events__item">
-                    <div class="event__hover">
-                        <button class="event__join">записаться</button>
+                    <div class="events__cover trainer">
+                        <div class="events__table">
+                            <p class="event__date">9.07</p>
+                            <p class="event__name">Как стать тренером?</p>
+                        </div>
+                        <div class="event__hover">
+                            <button class="event__join">записаться</button>
+                        </div>
+                        <div class="event__button">вебинар</div>
+                        <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                     </div>
-                    <p class="event__date">9.07</p>
-                    <p class="event__name">Как стать тренером?</p>
-                    <div  class="event__button">вебинар</div>
-                    <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                 </div>
                 <div class="events__item">
-                    <div class="event__hover">
-                        <button class="event__join">записаться</button>
+                    <div class="events__cover yoga">
+                        <div class="events__table">
+                            <p class="event__date">15.07</p>
+                            <p class="event__name">Йога, как стиль жизни</p>
+                        </div>
+                        <div class="event__hover">
+                            <button class="event__join">записаться</button>
+                        </div>
+                        <div class="event__button">вебинар</div>
+                        <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                     </div>
-                    <p class="event__date">15.07</p>
-                    <p class="event__name">Йога, как стиль жизни</p>
-                    <div  class="event__button">вебинар</div>
-                    <a href="#" class="events__add"><img src="img/icons/add.svg" alt="add"></a>
                 </div>
             </div>
         </div>
@@ -144,7 +155,7 @@
     <section class="subscription" id="subscription">
         <div class="h2__subscription">
             <div class="subscription__circle"></div>
-            <h2 class="h2 ">Подпишитесь на рассылку</h2>
+            <h2 class="h2">Подпишитесь на рассылку</h2>
         </div>        
         <form action="">
             <input type="email" class="form-control" id="InputEmailForm" aria-describedby="emailHelp" placeholder="Ваш e-mail">
@@ -240,7 +251,9 @@
                 </li>
             </ul>
         </div>
-        <div class="modal__bottom"></div>
+        <div class="modal__bottom">
+            <a href="#" class="banner__button modal_btn">Узнать подробнее</a>
+        </div>
         <button class="modal__close" onclick="closeModal()"></button>
     </div>
     <script src="js/main.js"></script>
