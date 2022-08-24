@@ -554,15 +554,7 @@
         row-gap: 41px;
     }
 }
-@media (max-width: 550px) {
-    .yoga {
-        background-image: url(../img/@1x/yoga_360.jpg);
-    }
-    .events__grid {
-        grid-template-rows: 308px 380px;
-    }
-}
-@media(max-width: 530px) {
+@media(max-width: 550px) {
       /* --- main --- */
     .banner {
         margin: 0 0 122px;
@@ -617,6 +609,12 @@
     }
     .banner__arrow img{
         display: none;
+    }
+    .yoga {
+        background-image: url(../img/@1x/yoga_360.jpg);
+    }
+    .events__grid {
+        grid-template-rows: 308px 380px;
     }
 }
 @media (max-width: 425px) {
