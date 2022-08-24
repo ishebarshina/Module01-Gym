@@ -21,6 +21,7 @@
     }
     .header__burger {
         flex: 73.5% 0 0;
+        margin-top: -12px;
     }
     .social_media {
         gap: 22px;
@@ -228,13 +229,15 @@
     form {
         display: flex;
         flex-direction: column;
-        margin: 50px 0 0;
+        margin: 50px auto 0;
+        align-items: stretch;
+        max-width: 360px;
     }
     input[type="email"] {
         order: 1;
-        width: 340px;
         margin-right: 0;
         padding-left: 27px;
+        
     }
     .subscribe__button {
         order: 3;
@@ -352,7 +355,7 @@
         line-height: 15px;
     }
 }
-@media(max-width: 767px) {
+@media(max-width: 650px) {
     .container {
         padding: 0 10px;
     }
@@ -368,63 +371,25 @@
     }
     .header__burger {
         flex: 25% 0 0;
+        margin-top: -5px;
     }
-  /* --- main --- */
-    .banner {
-        margin: 0 0 122px;
-    }
-    .banner__content {
-        padding: 23px 0 121px;
-        margin: 0;
-    }
-    .banner__content,
-    .banner__bottom {
-        width: 100%;
-        padding-bottom: 0px;
-        position: relative;
-    }
-    .banner__header {
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 32px;
-        letter-spacing: 0.023em;
-        text-transform: uppercase;
-        color: #2B3541;
-    }
-    .banner__subheader {
-        margin-bottom: 16px;
-    }
-    .banner__subheader span:first-child {
-        padding-right: 15px;
-    }
-    .banner__text {
-        width: 264px;
-        margin-bottom: 42px;
-    }
-    .banner__button {
-        padding: 22px 0;
-        display: block;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-    .banner__rectangle {
-        position: static;
-        width: 100%;
-        height: 216px;
-        margin-top: 84px;
-    }
+    /* --- main --- */
     .banner__screen {
-        max-width: 340px;
-        height: auto;
+        left: inherit;
+        right: -20px;
+        height: 280px;
+        width: auto;
         top: inherit;
         bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
     }
-    .banner__arrow img{
-        display: none;
+    .banner__header {
+        position: relative;
+        z-index: 10;
     }
-/* --- events --- */
+    .banner__text {
+        width: 80%;
+    }
+    /* --- events --- */
     .events__grid {
         column-gap: 10px;
         margin-top: 11px;
@@ -445,10 +410,6 @@
     }
     .trainer {
         background-image: url(../img/@1x/Vebinar_360.png);
-        background-position: top center;
-    }
-    .yoga {
-        background-image: url(../img/@1x/yoga_360.jpg);
         background-position: top center;
     }
     .events__item:nth-child(3) {
@@ -514,35 +475,15 @@
     /* --- subscription --- */
     .subscription {
         margin-top: 72px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    /* --- about --- */
-    .about {
-        margin-top: 73px;
-        margin-bottom: 82px;
-    }
-    .about__banner {
-        flex-direction: column;
-    }
-    .about__banner-text {
+    form {
         width: 100%;
-    }
-    .about__banner-text p {
-        margin-bottom: 27px;
-    }
-    .about__banner-img {
-        display: none;
-    }
-    .about__btn {
         max-width: 360px;
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        padding: 24px 0;
     }
-    .about__add {
-        margin-top: 56px;
-        grid-template-columns: 1fr;
-        row-gap: 41px;
+    input[type="email"] {
+        width: auto;
     }
     /* --- footer --- */
     .footer {
@@ -580,5 +521,106 @@
     }
     .modal .header__content-inner .social_media {
         right: 31px;
+    }
+}
+@media (max-width: 600px) {
+    /* --- about --- */
+    .about {
+        margin-top: 73px;
+        margin-bottom: 82px;
+    }
+    .about__banner {
+        flex-direction: column;
+    }
+    .about__banner-text {
+        width: 100%;
+    }
+    .about__banner-text p {
+        margin-bottom: 27px;
+    }
+    .about__banner-img {
+        display: none;
+    }
+    .about__btn {
+        max-width: 360px;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        padding: 24px 0;
+    }
+    .about__add {
+        margin-top: 56px;
+        grid-template-columns: 1fr;
+        row-gap: 41px;
+    }
+}
+@media (max-width: 550px) {
+    .yoga {
+        background-image: url(../img/@1x/yoga_360.jpg);
+    }
+    .events__grid {
+        grid-template-rows: 308px 380px;
+    }
+}
+@media(max-width: 530px) {
+      /* --- main --- */
+    .banner {
+        margin: 0 0 122px;
+    }
+    .banner__content {
+        padding: 23px 0 121px;
+        margin: 0;
+    }
+    .banner__content,
+    .banner__bottom {
+        width: 100%;
+        padding-bottom: 0px;
+        position: relative;
+    }
+    .banner__header {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0.023em;
+        text-transform: uppercase;
+        color: #2B3541;
+    }
+    .banner__subheader {
+        margin-bottom: 16px;
+    }
+    .banner__subheader span:first-child {
+        padding-right: 15px;
+    }
+    .banner__text {
+        width: 264px;
+        margin-bottom: 42px;
+    }
+    .banner__button {
+        padding: 22px 0;
+        display: block;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .banner__rectangle {
+        position: static;
+        width: 100%;
+        height: 216px;
+        margin-top: 84px;
+    }
+    .banner__screen {
+        max-width: 340px;
+        height: auto;
+        top: inherit;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner__arrow img{
+        display: none;
+    }
+}
+@media (max-width: 425px) {
+    .events__grid {
+        grid-template-rows: 308px 327px;
     }
 }
