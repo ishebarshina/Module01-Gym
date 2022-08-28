@@ -97,7 +97,7 @@
         row-gap: 10px;
         -moz-column-gap: 20px;
              column-gap: 20px;
-        grid-template-rows: 308px 327px;
+        grid-template-rows: 380px 327px;
     }
     .events__table {
         padding: 6px 23px;
@@ -354,6 +354,11 @@
         font-weight: 400;
         font-size: 10px;
         line-height: 15px;
+    }
+}
+@media(max-width: 950px) {
+    .events__grid {
+        grid-template-rows: 308px 327px;
     }
 }
 @media(max-width: 650px) {
