@@ -95,7 +95,8 @@
         padding: 0;
         margin-top: 13px;
         row-gap: 10px;
-        column-gap: 20px;
+        -moz-column-gap: 20px;
+             column-gap: 20px;
         grid-template-rows: 308px 327px;
     }
     .events__table {
@@ -391,7 +392,8 @@
     }
     /* --- events --- */
     .events__grid {
-        column-gap: 10px;
+        -moz-column-gap: 10px;
+             column-gap: 10px;
         margin-top: 11px;
     }
     .events__item {
