@@ -59,6 +59,7 @@
         height: 324px;
         top: 100px;
         left: 47%;
+        transform: scale(1.3);
     }
     .banner__bottom {
         padding: 0;
@@ -357,6 +358,9 @@
     }
 }
 @media(max-width: 950px) {
+    .banner__screen {
+        transform: scale(1);
+    }
     .events__grid {
         grid-template-rows: 308px 327px;
     }
