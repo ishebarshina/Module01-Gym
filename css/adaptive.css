@@ -21,7 +21,7 @@
     }
     .header__burger {
         flex: 73.5% 0 0;
-        margin-top: -12px;
+        /* margin-top: -12px; */
     }
     .social_media {
         gap: 22px;
@@ -359,6 +359,14 @@
 @media(max-width: 950px) {
     .events__grid {
         grid-template-rows: 308px 327px;
+    }
+    .header__burger {
+        flex: 63.5% 0 0;
+        margin-top: 0;
+    }
+    .footer__nav ul {
+        justify-content: space-between;
+        flex: 0 0 55%;
     }
 }
 @media(max-width: 650px) {
