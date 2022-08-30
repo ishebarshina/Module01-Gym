@@ -150,6 +150,7 @@ nav li {
 .banner {
     margin: 0 0 145px;
     position: relative;
+    overflow: hidden;
 }
 .banner__button {
     background: #FBF138;

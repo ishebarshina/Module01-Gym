@@ -57,7 +57,7 @@
     .banner__screen {
         width: 399px;
         height: 324px;
-        top: 70px;
+        top: 100px;
         left: 47%;
         transform: scale(1.2);
     }
@@ -75,7 +75,8 @@
     .banner__rectangle {
         width: 47%;
         height: 429px;
-        top: -4px;
+        /* top: -4px; */
+        bottom: 0;
         left: 53%;
     }
     .banner__arrow img{
@@ -360,6 +361,7 @@
 @media(max-width: 950px) {
     .banner__screen {
         transform: scale(1);
+        top: 120px;
     }
     .events__grid {
         grid-template-rows: 308px 327px;
@@ -371,6 +373,11 @@
     .footer__nav ul {
         justify-content: space-between;
         flex: 0 0 55%;
+    }
+}
+@media(max-width: 735px) {
+    .banner__screen {
+        top: 136px;
     }
 }
 @media(max-width: 650px) {
