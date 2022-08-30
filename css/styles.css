@@ -11,6 +11,8 @@ html {
 .body {
     margin: 0 auto;
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 li, ul {
     padding: 0;
@@ -103,6 +105,9 @@ nav li {
     opacity: 1;
  }
 /* --- banner text --- */
+.banner {
+    overflow-x: hidden;
+}
 .banner__content {
     padding: 220px 0 274px;
     width: 57%;
