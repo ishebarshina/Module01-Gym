@@ -57,9 +57,9 @@
     .banner__screen {
         width: 399px;
         height: 324px;
-        top: 100px;
+        top: 70px;
         left: 47%;
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
     .banner__bottom {
         padding: 0;
